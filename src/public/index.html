@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SushiMatch — Find Your Sushi</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main id="app">
+    <!-- VIEW: Landing -->
+    <section id="view-landing" class="view active">
+      <div class="card centered">
+        <h1 class="title">SushiMatch 🍣</h1>
+        <p class="lead">Answer a few fun questions and we'll match you with a sushi set.</p>
+        <button id="btn-start" class="btn primary">Start the Quiz</button>
+      </div>
+    </section>
+
+    <!-- VIEW: Quiz -->
+    <section id="view-quiz" class="view">
+      <div class="card">
+        <div id="quiz-header" class="quiz-header">
+          <!-- Progression removed as requested -->
+          <div class="quiz-title">Make a choice</div>
+        </div>
+
+        <div id="question-area" class="question-area">
+          <h2 id="question-text" class="question-text">Loading question…</h2>
+          <div id="options-grid" class="options-grid"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIEW: Result -->
+    <section id="view-result" class="view">
+      <div class="card result-card">
+        <h2 id="result-name">Your Sushi Set</h2>
+        <img id="result-image" class="result-image" src="" alt="Sushi set" />
+        <p id="result-desc" class="result-desc"></p>
+        <div class="result-actions">
+          <button id="btn-retry" class="btn">Try Again</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- toast / errors -->
+    <div id="toast" class="toast hidden"></div>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

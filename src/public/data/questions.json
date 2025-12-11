@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "question": "If your life had a color theme, which one would it be?",
+    "type": "single-choice",
+    "options": [
+      { "label": "Pastel pink 🌸", "image": "/images/pastel_pink.jpg", "value": "soft", "votes": ["salmon_nigiri","veggie_roll"] },
+      { "label": "Neon blue ⚡", "image": "/images/neon_blue.jpg", "value": "vibrant", "votes": ["rainbow_roll","dragon_roll"] },
+      { "label": "Earthy brown 🌾", "image": "/images/earthy_brown.jpg", "value": "natural", "votes": ["veggie_roll","salmon_nigiri"] },
+      { "label": "Black & gold 🖤💛", "image": "/images/black_gold.jpg", "value": "luxury", "votes": ["dragon_roll"] }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Pick your dream house:",
+    "type": "image-choice",
+    "options": [
+      { "label": "Beach House", "image": "/images/beach_house.jpg", "value": "chill", "votes": ["salmon_nigiri","rainbow_roll"] },
+      { "label": "Mountain Cabin", "image": "/images/mountain_cabin.jpg", "value": "calm", "votes": ["veggie_roll"] },
+      { "label": "Futuristic City Apartment", "image": "/images/futuristic_city.jpg", "value": "modern", "votes": ["dragon_roll","rainbow_roll"] },
+      { "label": "Japanese Garden Home", "image": "/images/japanese_garden.jpg", "value": "traditional", "votes": ["salmon_nigiri"] }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Your favorite way to spend a weekend?",
+    "type": "single-choice",
+    "options": [
+      { "label": "Watching anime or movies 🎬", "image": "/images/anime_movies.jpg", "value": "relaxed", "votes": ["rainbow_roll","spicy_tuna"] },
+      { "label": "Going out with friends 🎉", "image": "/images/going_out.jpg", "value": "social", "votes": ["rainbow_roll","dragon_roll"] },
+      { "label": "Cooking or crafting 🍳🧵", "image": "/images/cooking.jpg", "value": "creative", "votes": ["veggie_roll","salmon_nigiri"] },
+      { "label": "Exploring nature 🌲", "image": "/images/nature.jpg", "value": "adventurous", "votes": ["spicy_tuna","dragon_roll"] }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Choose a cute animal friend 🐾",
+    "type": "image-choice",
+    "options": [
+      { "label": "Cat", "image": "/images/cat.jpg", "value": "calm", "votes": ["salmon_nigiri"] },
+      { "label": "Dog", "image": "/images/dog.jpg", "value": "loyal", "votes": ["rainbow_roll"] },
+      { "label": "Fox", "image": "/images/fox.jpg", "value": "clever", "votes": ["spicy_tuna"] },
+      { "label": "Panda", "image": "/images/panda.jpg", "value": "chill", "votes": ["veggie_roll"] }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Pick a music vibe that fits you best 🎧",
+    "type": "single-choice",
+    "options": [
+      { "label": "Lo-fi chill beats", "image": "/images/lofi.jpg", "value": "lofi", "votes": ["salmon_nigiri","veggie_roll"] },
+      { "label": "High-energy EDM", "image": "/images/edm.jpg", "value": "edm", "votes": ["rainbow_roll","dragon_roll"] },
+      { "label": "Smooth jazz", "image": "/images/jazz.jpg", "value": "jazz", "votes": ["dragon_roll","salmon_nigiri"] },
+      { "label": "Guitar-powered rock", "image": "/images/rock.jpg", "value": "rock", "votes": ["spicy_tuna","dragon_roll"] }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What’s your dream travel destination?",
+    "type": "single-choice",
+    "options": [
+      { "label": "Tokyo, Japan 🗼", "image": "/images/tokyo.jpg", "value": "modern", "votes": ["dragon_roll","rainbow_roll"] },
+      { "label": "Bali, Indonesia 🌴", "image": "/images/bali.jpg", "value": "relaxed", "votes": ["salmon_nigiri","veggie_roll"] },
+      { "label": "New York, USA 🗽", "image": "/images/newyork.jpg", "value": "vibrant", "votes": ["rainbow_roll","dragon_roll"] },
+      { "label": "Swiss Alps 🏔️", "image": "/images/alps.jpg", "value": "calm", "votes": ["salmon_nigiri"] }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Pick a drink to go with your sushi 🍶",
+    "type": "image-choice",
+    "options": [
+      { "label": "Green Tea 🍵", "image": "/images/green_tea.jpg", "value": "classic", "votes": ["salmon_nigiri"] },
+      { "label": "Matcha Latte 🍃", "image": "/images/matcha_latte.jpg", "value": "aesthetic", "votes": ["rainbow_roll","dragon_roll"] },
+      { "label": "Cola 🥤", "image": "/images/cola.jpg", "value": "fun", "votes": ["rainbow_roll"] },
+      { "label": "Sake 🍶", "image": "/images/sake.jpg", "value": "mature", "votes": ["dragon_roll","spicy_tuna"] }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "How do you usually make decisions?",
+    "type": "single-choice",
+    "options": [
+      { "label": "Follow my heart ❤️", "image": "/images/heart.jpg", "value": "emotional", "votes": ["rainbow_roll","salmon_nigiri"] },
+      { "label": "Think logically 🧠", "image": "/images/brain.jpg", "value": "rational", "votes": ["salmon_nigiri","veggie_roll"] },
+      { "label": "Flip a coin 🪙", "image": "/images/coin.jpg", "value": "random", "votes": ["rainbow_roll"] },
+      { "label": "Ask friends 🤝", "image": "/images/friends.jpg", "value": "social", "votes": ["dragon_roll","rainbow_roll"] }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Pick the perfect sushi date setting 🍣💞",
+    "type": "image-choice",
+    "options": [
+      { "label": "Rooftop Dinner", "image": "/images/rooftop_dinner.jpg", "value": "romantic", "votes": ["dragon_roll","salmon_nigiri"] },
+      { "label": "Traditional Sushi Bar", "image": "/images/sushi_bar.jpg", "value": "classic", "votes": ["salmon_nigiri"] },
+      { "label": "Beach Picnic", "image": "/images/beach_picnic.jpg", "value": "relaxed", "votes": ["veggie_roll","rainbow_roll"] },
+      { "label": "Anime Cafe", "image": "/images/anime_cafe.jpg", "value": "playful", "votes": ["rainbow_roll"] }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "If you were a sushi ingredient, you’d be…",
+    "type": "single-choice",
+    "options": [
+      { "label": "Salmon – chill but popular 🧡", "image": "/images/salmon.jpg", "value": "salmon", "votes": ["salmon_nigiri"] },
+      { "label": "Tuna – confident and bold 🔥", "image": "/images/tuna.jpg", "value": "tuna", "votes": ["spicy_tuna","dragon_roll"] },
+      { "label": "Avocado – calm and friendly 🥑", "image": "/images/avocado.jpg", "value": "avocado", "votes": ["veggie_roll"] },
+      { "label": "Egg (Tamago) – sweet and surprising 🍳", "image": "/images/tamago.jpg", "value": "tamago", "votes": ["rainbow_roll"] }
+    ]
+  }
+]

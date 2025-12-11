@@ -1,0 +1,78 @@
+{
+  "categories": [
+    "salmon_nigiri",
+    "spicy_tuna",
+    "rainbow_roll",
+    "veggie_roll",
+    "dragon_roll"
+  ],
+  "questionWeights": {
+    "default": 1,
+    "overrides": {
+      "10": 2,
+      "5": 1
+    }
+  },
+  "mappings": {
+    "1": {
+      "soft":    { "salmon_nigiri": 2, "veggie_roll": 1 },
+      "vibrant": { "rainbow_roll": 3, "dragon_roll": 1 },
+      "natural": { "veggie_roll": 3, "salmon_nigiri": 1 },
+      "luxury":  { "dragon_roll": 3, "salmon_nigiri": 1 }
+    },
+    "2": {
+      "chill":      { "salmon_nigiri": 2, "rainbow_roll": 1 },
+      "calm":       { "salmon_nigiri": 2, "veggie_roll": 1 },
+      "modern":     { "dragon_roll": 2, "rainbow_roll": 1 },
+      "traditional":{ "salmon_nigiri": 3 }
+    },
+    "3": {
+      "relaxed":    { "rainbow_roll": 2, "salmon_nigiri": 1 },
+      "social":     { "rainbow_roll": 2, "dragon_roll": 1 },
+      "creative":   { "veggie_roll": 2, "salmon_nigiri": 1 },
+      "adventurous":{ "spicy_tuna": 2, "dragon_roll": 1 }
+    },
+    "4": {
+      "calm":   { "salmon_nigiri": 2 },
+      "loyal":  { "rainbow_roll": 1, "dragon_roll": 1 },
+      "clever": { "spicy_tuna": 2, "dragon_roll": 1 },
+      "chill":  { "veggie_roll": 2, "salmon_nigiri": 1 }
+    },
+    "5": {
+      "lofi": { "salmon_nigiri": 2, "veggie_roll": 1 },
+      "edm":  { "rainbow_roll": 2, "dragon_roll": 1 },
+      "jazz": { "dragon_roll": 2, "salmon_nigiri": 1 },
+      "rock": { "spicy_tuna": 2, "dragon_roll": 1 }
+    },
+    "6": {
+      "modern":  { "dragon_roll": 2, "rainbow_roll": 1 },
+      "relaxed": { "salmon_nigiri": 2, "veggie_roll": 1 },
+      "vibrant": { "rainbow_roll": 2, "dragon_roll": 1 },
+      "calm":    { "salmon_nigiri": 2 }
+    },
+    "7": {
+      "classic":   { "salmon_nigiri": 2, "veggie_roll": 1 },
+      "aesthetic": { "rainbow_roll": 2, "dragon_roll": 1 },
+      "fun":       { "rainbow_roll": 1 },
+      "mature":    { "dragon_roll": 2, "spicy_tuna": 1 }
+    },
+    "8": {
+      "emotional": { "rainbow_roll": 1, "salmon_nigiri": 1 },
+      "rational":  { "salmon_nigiri": 2, "veggie_roll": 1 },
+      "random":    { "rainbow_roll": 1 },
+      "social":    { "rainbow_roll": 2, "dragon_roll": 1 }
+    },
+    "9": {
+      "romantic": { "dragon_roll": 2, "salmon_nigiri": 1 },
+      "classic":  { "salmon_nigiri": 3 },
+      "relaxed":  { "veggie_roll": 2, "rainbow_roll": 1 },
+      "playful":  { "rainbow_roll": 2 }
+    },
+    "10": {
+      "salmon":  { "salmon_nigiri": 3 },
+      "tuna":    { "spicy_tuna": 2, "dragon_roll": 1 },
+      "avocado": { "veggie_roll": 3 },
+      "tamago":  { "rainbow_roll": 1, "salmon_nigiri": 1 }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "salmon_nigiri",
+    "name": "Salmon Nigiri Set",
+    "image": "/images/salmon_nigiri.jpg",
+    "description": "Calm, classic, and loved by everyone — you appreciate the simple, delicious things in life.",
+    "default": true
+  },
+  {
+    "id": "spicy_tuna",
+    "name": "Spicy Tuna Set",
+    "image": "/images/spicy_tuna.jpg",
+    "description": "Bold and adventurous — you like a little heat and excitement in your day.",
+    "default": false
+  },
+  {
+    "id": "rainbow_roll",
+    "name": "Rainbow Roll Set",
+    "image": "/images/rainbow_roll.jpg",
+    "description": "Colorful, playful, and expressive — you stand out and love variety.",
+    "default": false
+  },
+  {
+    "id": "veggie_roll",
+    "name": "Veggie Roll Set",
+    "image": "/images/veggie_roll.jpg",
+    "description": "Fresh, balanced and wholesome — you like harmony and honest flavors.",
+    "default": false
+  },
+  {
+    "id": "dragon_roll",
+    "name": "Dragon Roll Set",
+    "image": "/images/dragon_roll.jpg",
+    "description": "Luxurious, dramatic, and layered — you enjoy bold presentations and a twist of surprise.",
+    "default": false
+  }
+]

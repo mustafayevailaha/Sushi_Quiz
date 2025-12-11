@@ -1,10 +1,8 @@
----
 
 # 🍣 Sushi Quiz — Interactive Social Quiz
 
-*A sushi-themed interactive quiz web application built with Node.js & Express, containerized with Docker, and automatically deployed via GitHub Actions + Render.*
+A sushi-themed interactive quiz web application built with Node.js & Express, containerized with Docker, and automatically deployed via GitHub Actions + Render.
 
----
 
 ## 📸 Demo
 

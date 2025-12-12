@@ -1,54 +1,227 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="luxury">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SushiMatch — Find Your Sushi</title>
-  <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SushiMatch — Premium Sushi Personality Discovery 🍣</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <main id="app">
-    <!-- VIEW: Landing -->
-    <section id="view-landing" class="view active">
-      <div class="card centered">
-        <h1 class="title">SushiMatch 🍣</h1>
-        <p class="lead">Answer a few fun questions and we'll match you with a sushi set.</p>
-        <button id="btn-start" class="btn primary">Start the Quiz</button>
-      </div>
-    </section>
+<!-- Enhanced Luxury Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand luxury-font">🍣 SushiMatch</div>
+        <div class="nav-links">
+            <a href="#" data-page="home" class="nav-link active">Home</a>
+            <a href="#" data-page="about" class="nav-link">About Sushi</a>
+            <a href="#" data-page="gallery" class="nav-link">Gallery</a>
+            <a href="#" data-page="facts" class="nav-link">Fun Facts</a>
+        </div>
+        <div class="nav-controls">
+            <!-- Theme Toggle -->
+            <button class="icon-btn" id="theme-toggle" title="Toggle Theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+            <!-- Language Toggle -->
+            <div class="lang-dropdown">
+                <button id="lang-btn" class="lang-button">🌐</button>
 
-    <!-- VIEW: Quiz -->
-    <section id="view-quiz" class="view">
-      <div class="card">
-        <div id="quiz-header" class="quiz-header">
-          <!-- Progression removed as requested -->
-          <div class="quiz-title">Make a choice</div>
+                <div id="lang-menu" class="lang-menu hidden">
+                    <div class="lang-option" data-lang="en">🇬🇧 English</div>
+                    <div class="lang-option" data-lang="az">🇦🇿 Azərbaycan</div>
+                    <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+                    <div class="lang-option" data-lang="pt-br">🇧🇷 Português (BR)</div>
+                </div>
+            </div>
+
+            <button class="btn-luxury" id="start-quiz-nav">
+                <i class="fas fa-gem"></i> Begin Journey
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE: Home -->
+<section id="page-home" class="page active">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title luxury-font">
+                <span data-i18n="hero.discover">Discover Your</span><br>
+                <span class="text-gradient" data-i18n="hero.soul">Sushi Soul</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                Embark on a culinary journey of self-discovery. Our premium personality analysis reveals which sushi masterpiece truly reflects your inner essence.
+            </p>
+            <div class="hero-cta">
+                <button class="btn-luxury btn-large" id="start-quiz-hero">
+                    <i class="fas fa-gem"></i> <span data-i18n="hero.begin">Begin Discovery</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE: About Sushi -->
+<section id="page-about" class="page">
+    <div class="content-page-luxury">
+        <h1 class="page-title-luxury luxury-font" data-i18n="about.title">The Art of Sushi</h1>
+
+        <div class="glass-card content-card-luxury">
+            <h2 class="text-gradient" data-i18n="about.what">What is Sushi?</h2>
+            <p data-i18n="about.whatText">Sushi (寿司) is a traditional Japanese dish combining vinegared rice with seafood, vegetables, and occasionally tropical fruits. The word "sushi" refers to the specially prepared rice, not the fish!</p>
         </div>
 
-        <div id="question-area" class="question-area">
-          <h2 id="question-text" class="question-text">Loading question…</h2>
-          <div id="options-grid" class="options-grid"></div>
+        <div class="glass-card content-card-luxury">
+            <h2 class="text-gradient" data-i18n="about.history">History of Sushi</h2>
+            <p data-i18n="about.historyText1">Sushi's origins date back to Southeast Asia around 2,000 years ago. Originally, it was a method of preserving fish in fermented rice.</p>
+            <p data-i18n="about.historyText2">Modern sushi as we know it today was developed in Edo (now Tokyo) in the early 19th century. Hanaya Yohei created "nigiri sushi" - hand-pressed sushi with fresh fish on vinegared rice.</p>
         </div>
 
-      </div>
-    </section>
-
-    <!-- VIEW: Result -->
-    <section id="view-result" class="view">
-      <div class="card result-card">
-        <h2 id="result-name">Your Sushi Set</h2>
-        <img id="result-image" class="result-image" src="" alt="Sushi set" />
-        <p id="result-desc" class="result-desc"></p>
-        <div class="result-actions">
-          <button id="btn-retry" class="btn">Try Again</button>
+        <div class="glass-card content-card-luxury">
+            <h2 class="text-gradient" data-i18n="about.types">Types of Sushi</h2>
+            <div class="sushi-types-grid-luxury">
+                <div class="type-item-luxury glass-card">
+                    <div class="type-icon">🍣</div>
+                    <h3 data-i18n="about.nigiri">Nigiri</h3>
+                    <p data-i18n="about.nigiriDesc">Hand-pressed rice topped with fish or seafood</p>
+                </div>
+                <div class="type-item-luxury glass-card">
+                    <div class="type-icon">🌯</div>
+                    <h3 data-i18n="about.maki">Maki</h3>
+                    <p data-i18n="about.makiDesc">Rice and fillings rolled in seaweed (nori)</p>
+                </div>
+                <div class="type-item-luxury glass-card">
+                    <div class="type-icon">🐟</div>
+                    <h3 data-i18n="about.sashimi">Sashimi</h3>
+                    <p data-i18n="about.sashimiDesc">Fresh raw fish sliced thinly, served without rice</p>
+                </div>
+                <div class="type-item-luxury glass-card">
+                    <div class="type-icon">🍱</div>
+                    <h3 data-i18n="about.temaki">Temaki</h3>
+                    <p data-i18n="about.temakiDesc">Hand-rolled cone-shaped sushi</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
 
-    <!-- toast / errors -->
-    <div id="toast" class="toast hidden"></div>
-  </main>
+        <div class="glass-card content-card-luxury">
+            <h2 class="text-gradient" data-i18n="about.etiquette">Sushi Etiquette</h2>
+            <ul class="etiquette-list-luxury">
+                <li>✅ <span data-i18n="about.tip1">Use your hands or chopsticks - both are acceptable</span></li>
+                <li>✅ <span data-i18n="about.tip2">Dip fish side (not rice) into soy sauce</span></li>
+                <li>✅ <span data-i18n="about.tip3">Eat nigiri in one bite if possible</span></li>
+                <li>✅ <span data-i18n="about.tip4">Ginger is for cleansing your palate between types</span></li>
+                <li>❌ <span data-i18n="about.tip5">Don't rub chopsticks together - it's considered rude</span></li>
+                <li>❌ <span data-i18n="about.tip6">Don't mix wasabi directly into soy sauce</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-  <script src="/js/app.js"></script>
+<!-- PAGE: Photo Gallery -->
+<section id="page-gallery" class="page">
+    <div class="slider-section">
+        <h2 class="slider-title luxury-font" data-i18n="gallery.title">Sushi Art Gallery</h2>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider-track" id="slider-track">
+                    <!-- Populated by JS -->
+                </div>
+                <button class="slider-nav prev" id="slider-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav next" id="slider-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots" id="slider-dots"></div>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE: Fun Facts -->
+<section id="page-facts" class="page">
+    <div class="content-page-luxury">
+        <h1 class="page-title-luxury luxury-font" data-i18n="facts.title">Fun Sushi Facts</h1>
+        <div class="facts-grid-luxury">
+            <div class="glass-card fact-card-luxury">
+                <div class="fact-icon-luxury">🌍</div>
+                <h3 data-i18n="facts.fact1Title">Global Phenomenon</h3>
+                <p data-i18n="facts.fact1">Sushi restaurants can be found in over 150 countries worldwide!</p>
+            </div>
+            <div class="glass-card fact-card-luxury">
+                <div class="fact-icon-luxury">💰</div>
+                <h3 data-i18n="facts.fact2Title">Most Expensive</h3>
+                <p data-i18n="facts.fact2">The world's most expensive sushi costs $1,978 and features caviar, pink salmon, and diamonds!</p>
+            </div>
+            <div class="glass-card fact-card-luxury">
+                <div class="fact-icon-luxury">🔪</div>
+                <h3 data-i18n="facts.fact3Title">Master Chefs</h3>
+                <p data-i18n="facts.fact3">It takes up to 10 years of training to become a master sushi chef in Japan!</p>
+            </div>
+            <div class="glass-card fact-card-luxury">
+                <div class="fact-icon-luxury">🍚</div>
+                <h3 data-i18n="facts.fact4Title">Perfect Rice</h3>
+                <p data-i18n="facts.fact4">Sushi rice must be kept at body temperature (37°C) for perfect texture.</p>
+            </div>
+            <div class="glass-card fact-card-luxury">
+                <div class="fact-icon-luxury">🐟</div>
+                <h3 data-i18n="facts.fact5Title">Bluefin Record</h3>
+                <p data-i18n="facts.fact5">A single bluefin tuna sold for $3.1 million in Tokyo in 2019!</p>
+            </div>
+            <div class="glass-card fact-card-luxury">
+                <div class="fact-icon-luxury">📅</div>
+                <h3 data-i18n="facts.fact6Title">Sushi Day</h3>
+                <p data-i18n="facts.fact6">June 18th is celebrated as International Sushi Day!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE: Quiz -->
+<section id="page-quiz" class="page">
+    <div class="quiz-container glass-card">
+        <div class="quiz-progress-bar">
+            <div class="quiz-progress" id="quiz-progress"></div>
+        </div>
+        <div class="quiz-header-info">
+            <span data-i18n="quiz.question">Question</span> <span id="current-q">1</span>/<span id="total-q">10</span>
+        </div>
+        <h2 class="question-text luxury-font" id="question-text">Loading question...</h2>
+        <div id="options-grid" class="options-grid-premium">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+</section>
+
+<!-- PAGE: Result -->
+<section id="page-result" class="page">
+    <div class="result-section">
+        <div class="result-container glass-card">
+            <h2 class="result-title luxury-font" id="result-name">Your Sushi Match</h2>
+            <div class="result-image-container">
+                <img src="" alt="Sushi Result" class="result-image" id="result-image">
+            </div>
+            <p class="result-desc-premium" id="result-desc"></p>
+            <div class="result-actions-luxury">
+                <button class="btn-luxury" id="btn-save-result">
+                    <i class="fas fa-bookmark"></i> <span data-i18n="result.save">Save to Stories</span>
+                </button>
+                <button class="btn-luxury" id="btn-retry">
+                    <i class="fas fa-redo"></i> <span data-i18n="result.retry">Try Again</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE: User Stories (No Auth) -->
+
+
+<!-- Toast -->
+<div id="toast" class="toast hidden"></div>
+
+<script src="./js/app.js"></script>
 </body>
 </html>

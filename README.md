@@ -1,4 +1,5 @@
 # 🍣 Sushi Quiz — Interactive Social Quiz
+<b><u>Teammates: Azerin Salahova, Ilaha Mustafayeva, Madina Mammadova, Farida Orujova</u></b>
 
 A sushi-themed interactive quiz web application built with Node.js & Express, containerized with Docker, and automatically deployed via GitHub Actions + Render.
 
